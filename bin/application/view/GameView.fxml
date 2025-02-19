@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="500.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GameController">
+    <Label fx:id="computerLabel"/>
+    <Label fx:id="resultLabel" text="Tulos: " />
+    <Label fx:id="roundsLabel" text="Kierrokset: 0" />
+    <Label fx:id="scoreLabel" text="Tilanne: 0 - 0" />
+    
+    <RadioButton fx:id="rockButton" text="Kivi" />
+    <RadioButton fx:id="paperButton" text="Paperi" />
+    <RadioButton fx:id="scissorsButton" text="Sakset" />
+    
+ 	<Button fx:id="playRoundButton" onAction="#playRound" text="Pelaa kierros" />
+    <Button fx:id="newGameButton" onAction="#resetGame" text="Uusi peli" visible="false" />
+    <Button fx:id="exitButton" onAction="#exitGame" text="Lopeta" visible="false" />
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="500.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SettingsController">
+    <Label fx:id="nameLabel" alignment="CENTER" text="Syötä nimesi:" />
+    <TextField fx:id="playerNameField" promptText="Pelaajan nimi" />
+    
+    <Label fx:id="winCountLabel" text="Valitse voittomäärä:" />
+    <ComboBox fx:id="winCountComboBox" />
+    
+    <Button onAction="#startGame" text="Aloita peli" />
+    
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;" />
+    
+</VBox>
