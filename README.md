@@ -1,2 +1,2 @@
 # KPS
-KPS app
+KPS
